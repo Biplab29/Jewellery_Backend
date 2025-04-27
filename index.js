@@ -13,7 +13,8 @@ connectDB();
 
 // Allow credentials and frontend origin
 app.use(cors({
-    origin: "http://localhost:5173", 
+    origin: true,
+    methods:[ "GET","POST","PUT","DELETE"], 
     credentials: true
 }));
 
